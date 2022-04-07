@@ -13,5 +13,11 @@ pipeline  {
         sh "yarn build"
       }
     }
+    stage("Deploy") {
+      steps {
+         sh "sudo rm -rf /var/www/jenkins-Thanisorn"
+         sh "sudo cp -r ${WORKSPACE}/build/ /var/www/html/jenkins-Thanisorn/"
+      }
+    }
   }
 }
