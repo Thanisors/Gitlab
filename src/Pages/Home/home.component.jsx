@@ -5,7 +5,7 @@ import './home.style.scss';
 const HomePage = () => {
     return (
         <div>
-            <h1>POOM</h1>
+            <h1>Thanisorn</h1>
         </div>
     )
 }
